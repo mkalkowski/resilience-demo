@@ -3,14 +3,13 @@
         xmlns:jsr107="http://www.ehcache.org/v3/jsr107"
         xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
 							http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
-    <cache alias="static-data">
+    <cache alias="static-data" >
         <expiry>
             <ttl unit="seconds">600</ttl>
         </expiry>
         <heap unit="entries">10</heap>
 
-        <jsr107:mbeans enable-statistics="true"/>
+        <jsr107:mbeans enable-statistics="true" enable-management="true"/>
     </cache>
-
 
 </config>

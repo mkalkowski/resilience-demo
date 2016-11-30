@@ -23,7 +23,7 @@ public class CounterpartyService {
   }
 
   public String cachedCpty() {
-    return "CACHED_CPTY" + System.lineSeparator();
+    return "CACHED_CPTY";
   }
 
 }

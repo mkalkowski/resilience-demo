@@ -16,8 +16,8 @@ public class DynamicDataController {
     @Cacheable(cacheNames = "dynamic-data")
     public String loadData(@PathVariable String id) throws InterruptedException {
 
-        log.info("Loading dynamic data...");
-        Thread.sleep(1000L);
+        log.info("Loading dynamic data for {}...", id);
+        Thread.sleep(1100L);
         return "Finished request " + id + System.lineSeparator();
     }
 }

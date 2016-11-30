@@ -11,7 +11,7 @@ public class CounterpartyApplication  {
 
   @RequestMapping(value = "/counterparty")
   public String counterparty(){
-    return "C12345" + System.lineSeparator();
+    return "C12345";
   }
 
   public static void main(String[] args) {
